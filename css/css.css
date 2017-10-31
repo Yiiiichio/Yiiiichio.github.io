@@ -127,27 +127,46 @@ h2 {font-size: 1rem;}
 /* aboutme END */
 
 /* myprojects BEGIN */
-#myprojects {
+#myprojects1, #myprojects2 {
     margin: 5rem auto;
     text-align: center;
     color: #666666;
     background-color: #fff;
 }
-.workprojects img {
+.workprojects1 img, .workprojects2 img {
     width: 100%;
     display: block;
     margin: auto;
 }
-.workprojects {
+.workprojects1, .workprojects2 {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin: 3rem 0rem;
 }
-.workprojects a {
+.workprojects1 a {
     color: #666666;
     display: block;
     padding-top: 1rem;
     padding-bottom: 1rem;
     font-size: 1rem;
+}
+.workprojects2 p {
+    font-size: 1rem;
+    text-align: left;
+    padding: 0 10px;
+}
+.workprojects2 p:first-child {
+    font-weight: bold;
+    padding-top: 30px;
+}
+.workprojects2 a {
+    color: #666666;
+    display: block;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1rem;
+    text-align: left;
+    padding: 0 10px;
+    padding-bottom: 20px;
 }
 /* myprojects END */
 
