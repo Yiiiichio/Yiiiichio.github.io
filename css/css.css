@@ -1,0 +1,187 @@
+html {font-size: 13px;} 
+body {font-family: 'Mada';}
+h1 {font-size: 1.7rem;}
+h2 {font-size: 1rem;}
+
+/* prevent highlight on focused element */
+*:focus {
+    outline: none;
+}
+
+/* menu BEGIN */
+.c-navbar {
+    background-color: rgba(38, 38, 38, 0.5);
+    font-size: 1rem;
+}
+.c-navbar a {
+    color: rgba(255, 255, 255, 0.9);
+}
+.navbar .navbar-nav  > li > a:hover {
+    color: black;
+}
+.navbar-brand {
+    padding: 0;
+    margin: 0;
+}
+.navbar-brand img {
+    height: 40px;
+    width: auto;
+    margin: 10px 5px;
+    padding: 0;
+    border-radius: 10px;
+}
+.c-navbar .navbar-toggle .icon-bar {
+    background-color: #666666;
+    height: 3px;
+}
+/* menu END */
+
+/* hero image&text BEGIN */
+.c-hero-image {
+    background-image: url("../pics/hero_image.JPG");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin: 0;
+    min-height: 600px;
+}
+.c-hero-cover {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    min-height: 600px;
+}
+.c-hero-text {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-align: center;
+}
+.c-hero-text p {
+    opacity: 0.9;
+    filter: alpha(opacity=90);  
+    color: white;
+    font-size: 4rem;
+    font-weight: 800;
+}
+.c-hero-arrow {
+    position: absolute;
+    bottom: 10%;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.c-hero-arrow p{
+    opacity: 0.9;
+    filter: alpha(opacity=90);  
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.c-hero-arrow a div{
+    opacity: 0.9;
+    filter: alpha(opacity=90);  
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.9);
+    -moz-animation:bounce 1.5s infinite;  
+    -webkit-animation:bounce 1.5s infinite;
+    animation:bounce 1.5s infinite;  
+}
+@-webkit-keyframes bounce {
+    0%,100%,20%,50%,80%{-webkit-transform:translateY(0);transform:translateY(0)}
+    40%{-webkit-transform:translateY(-20px);transform:translateY(-20px)}
+    60%{-webkit-transform:translateY(-10px);transform:translateY(-10px)}
+}
+@keyframes bounce {
+    0%,100%,20%,50%,80%{-webkit-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0)}
+    40%{-webkit-transform:translateY(-20px);-ms-transform:translateY(-20px);transform:translateY(-20px)}
+    60%{-webkit-transform:translateY(-10px);-ms-transform:translateY(-10px);transform:translateY(-10px)}
+}
+/* hero image&text END */
+
+/* aboutme BEGIN */
+#aboutme {
+    margin: 5rem auto;
+    text-align: center;
+    color: #666666;
+}
+#aboutme img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 3rem auto;
+}
+#aboutme p {
+    font-size: 1.2rem;
+}
+/* aboutme END */
+
+/* myprojects BEGIN */
+#myprojects {
+    margin: 5rem auto;
+    text-align: center;
+    color: #666666;
+    background-color: #fff;
+}
+.workprojects img {
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+.workprojects {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 3rem 0rem;
+}
+.workprojects a {
+    color: #666666;
+    display: block;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1rem;
+}
+/* myprojects END */
+
+/* contactme BEGIN */
+#contactme {
+    margin-top: 5rem;
+    text-align: center;
+    color: #fff;
+    background-color: #666666;    
+}
+form {
+    margin: 3rem auto;
+}
+/* contactme END */
+
+
+footer {
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+
+/* Small devices (tablets, 768px and up) */
+@media screen and (min-width: 768px){
+    html {font-size: 14px;}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media screen and (min-width: 992px){
+    html {font-size: 16px;}
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px){
+    html {font-size: 18px;}
+}
